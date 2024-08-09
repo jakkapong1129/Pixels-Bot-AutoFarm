@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > LoaderX
+          echo $d > PiXelsBot
           
       - name: Commit changes
         run: | 
@@ -29,16 +29,16 @@ jobs:
           git config --local user.name "${{ github.repository_owner }}"
           git add -A
           
-          arr[0]="Loader"
-          arr[1]="Loader"
-          arr[2]="Loader"
-          arr[3]="Loader"
-          arr[4]="Loader"
-          arr[5]="Loader"
-          arr[6]="Loader"
-          arr[7]="Loader"
-          arr[8]="Loader"
-          arr[9]="Loader"
+          arr[0]="Pixels"
+          arr[1]="Pixels"
+          arr[2]="Pixels"
+          arr[3]="Pixels"
+          arr[4]="Pixels"
+          arr[5]="Pixels"
+          arr[6]="Pixels"
+          arr[7]="Pixels"
+          arr[8]="Pixels"
+          arr[9]="Pixels"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
